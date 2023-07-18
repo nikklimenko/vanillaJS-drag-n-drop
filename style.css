@@ -1,0 +1,93 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  background-color: #ddd2d2;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+
+.character {
+  width: 300px;
+  height: 500px;
+  position: relative;
+  background-image: url(./images/character-bg.png);
+  background-position: center;
+  background-size: cover;
+}
+
+.inventory {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.empty {
+  width: 60px;
+  height: 60px;
+  background-color: #fff;
+  border: 2px solid gray;
+  border-radius: 5px;
+  z-index: 10;
+
+}
+
+.character .slot {
+  position: absolute;
+}
+
+.slot[data-slot-type="armor"] {
+  top: calc(50% - 100px);
+  left: calc(50% - 20px);
+} 
+
+
+.slot[data-slot-type="helm"] {
+  top: 0;
+  left: calc(50% - 20px);
+}
+
+.slot[data-slot-type="weapon"] {
+  top: calc(50% - 100px);
+  left: 20px;
+}
+
+.slot[data-slot-type="boot"] {
+  bottom: 50px;
+  left: calc(50% - 20px);
+}
+
+.slot[data-slot-type="pants"] {
+  top: 275px;
+  left: calc(50% - 20px);
+}
+
+.fill {
+  width: 56px;
+  height: 56px;
+  background-position: center;
+  background-size: cover;
+  cursor: pointer;
+  border-radius: 5px;
+
+}
+
+.hold {
+  border: 2px solid rgb(221, 212, 31);
+  box-shadow: 0px 0px 5px #888;
+}
+
+.hovered {
+  background-color: rgba(193, 239, 53, 0.847);
+  border-style: dashed;
+}
+
+.invisible {
+  opacity: 0;
+}

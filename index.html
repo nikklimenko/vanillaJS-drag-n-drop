@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <title>VanillaJs Drag-n-Drop</title>
+</head>
+<body>
+  <div class="character">
+    <div class="slot for-helm" data-slot-type="helm">
+      <div class="empty"></div>
+    </div>
+    <div class="slot" data-slot-type="armor">
+      <div class="empty"></div>
+    </div>
+    <div class="slot" data-slot-type="weapon">
+      <div class="empty"></div>
+    </div>
+    <div class="slot" data-slot-type="pants">
+      <div class="empty"></div>
+    </div>
+    <div class="slot" data-slot-type="boot">
+      <div class="empty"></div>
+    </div>
+  </div>
+
+  <div class="inventory">
+    <div class="empty">
+      <div class="fill" draggable="true" data-fill-type="armor" 
+           style="background-image: url('./images/light_armor.png')"></div>
+    </div>
+    <div class="empty">
+      <div class="fill" draggable="true" data-fill-type="pants" 
+           style="background-image: url('./images/light_pants.PNG')"></div>
+    </div>
+    <div class="empty"></div>
+    <div class="empty">
+      <div class="fill" draggable="true" data-fill-type="weapon" 
+           style="background-image: url('./images/Sword2.png')"></div>
+    </div>
+    <div class="empty">
+      <div class="fill" draggable="true" data-fill-type="boot" 
+           style="background-image: url('./images/light_boot.png')"></div>
+    </div>
+    <div class="empty">
+      <div class="fill" draggable="true" data-fill-type="helm" 
+           style="background-image: url('./images/light_helm.PNG')"></div>
+    </div>
+  </div>
+
+  <script src="./main.js"></script>
+</body>
+</html>
